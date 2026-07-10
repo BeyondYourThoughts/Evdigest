@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#000000',
+        'on-primary': '#ffffff',
+        ink: '#000000',
+        'ink-soft': '#1a1a1a',
+        body: '#757575',
+        hairline: '#e0e0e0',
+        canvas: '#ffffff',
+        'canvas-soft': '#f5f5f5',
+        link: '#057dbc',
+        accent: '#cc0000',
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', 'Georgia', '"Times New Roman"', 'serif'],
+        serif: ['Lora', 'Georgia', '"Times New Roman"', 'serif'],
+        sans: ['Inter', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+      fontSize: {
+        'display-hero': ['64px', { lineHeight: '59.52px', letterSpacing: '-0.5px', fontWeight: '400' }],
+        'display-lg': ['48px', { lineHeight: '50.4px', letterSpacing: '-0.4px', fontWeight: '400' }],
+        'display-md': ['32px', { lineHeight: '35.2px', letterSpacing: '-0.3px', fontWeight: '400' }],
+        'display-sm': ['26px', { lineHeight: '28.08px', fontWeight: '400' }],
+        'display-xs': ['20px', { lineHeight: '24px', letterSpacing: '-0.28px', fontWeight: '700' }],
+        'body-serif-lg': ['19px', { lineHeight: '27.93px', letterSpacing: '0.108px', fontWeight: '400' }],
+        'body-serif-md': ['16px', { lineHeight: '24px', letterSpacing: '0.09px', fontWeight: '400' }],
+        'body-md': ['17px', { lineHeight: '20px', fontWeight: '400' }],
+        'body-md-strong': ['17px', { lineHeight: '22px', letterSpacing: '-0.144px', fontWeight: '700' }],
+        'body-sm': ['14px', { lineHeight: '18px', letterSpacing: '0.4px', fontWeight: '400' }],
+        'body-sm-strong': ['14px', { lineHeight: '18px', letterSpacing: '0.4px', fontWeight: '700' }],
+        byline: ['12.73px', { lineHeight: '28px', letterSpacing: '0.108px', fontWeight: '700' }],
+        caption: ['12px', { lineHeight: '16px', fontWeight: '400' }],
+        button: ['16px', { lineHeight: '20px', letterSpacing: '0.3px', fontWeight: '700' }],
+      },
+      spacing: {
+        xxs: '2px',
+        xs: '4px',
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        '4xl': '48px',
+        '5xl': '64px',
+        '6xl': '80px',
+      },
+      maxWidth: {
+        editorial: '1400px',
+      },
+    },
+  },
+  plugins: [],
+};
